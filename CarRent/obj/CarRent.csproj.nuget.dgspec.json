@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\felip\\Documents\\Github\\CAR-TEST\\CarRent\\CarRent.csproj": {}
+    "C:\\Users\\felip\\Documents\\Github\\WebApiBrowserTravel\\CarRent\\CarRent.csproj": {}
   },
   "projects": {
-    "C:\\Users\\felip\\Documents\\Github\\CAR-TEST\\CarRent\\CarRent.csproj": {
+    "C:\\Users\\felip\\Documents\\Github\\WebApiBrowserTravel\\CarRent\\CarRent.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\felip\\Documents\\Github\\CAR-TEST\\CarRent\\CarRent.csproj",
+        "projectUniqueName": "C:\\Users\\felip\\Documents\\Github\\WebApiBrowserTravel\\CarRent\\CarRent.csproj",
         "projectName": "CarRent",
-        "projectPath": "C:\\Users\\felip\\Documents\\Github\\CAR-TEST\\CarRent\\CarRent.csproj",
+        "projectPath": "C:\\Users\\felip\\Documents\\Github\\WebApiBrowserTravel\\CarRent\\CarRent.csproj",
         "packagesPath": "C:\\Users\\felip\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\felip\\Documents\\Github\\CAR-TEST\\CarRent\\obj\\",
+        "outputPath": "C:\\Users\\felip\\Documents\\Github\\WebApiBrowserTravel\\CarRent\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\felip\\AppData\\Roaming\\NuGet\\NuGet.Config",

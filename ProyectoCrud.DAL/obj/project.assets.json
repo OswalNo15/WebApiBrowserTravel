@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\felip\\Documents\\Github\\CAR-TEST\\ProyectoCrud.DAL\\ProyectoCrud.DAL.csproj",
+      "projectUniqueName": "C:\\Users\\felip\\Documents\\Github\\WebApiBrowserTravel\\ProyectoCrud.DAL\\ProyectoCrud.DAL.csproj",
       "projectName": "ProyectoCrud.DAL",
-      "projectPath": "C:\\Users\\felip\\Documents\\Github\\CAR-TEST\\ProyectoCrud.DAL\\ProyectoCrud.DAL.csproj",
+      "projectPath": "C:\\Users\\felip\\Documents\\Github\\WebApiBrowserTravel\\ProyectoCrud.DAL\\ProyectoCrud.DAL.csproj",
       "packagesPath": "C:\\Users\\felip\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\felip\\Documents\\Github\\CAR-TEST\\ProyectoCrud.DAL\\obj\\",
+      "outputPath": "C:\\Users\\felip\\Documents\\Github\\WebApiBrowserTravel\\ProyectoCrud.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\felip\\AppData\\Roaming\\NuGet\\NuGet.Config",

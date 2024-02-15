@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\felip\\Documents\\Github\\CAR-TEST\\ProyecoCrud.Models\\ProyecoCrud.Models.csproj",
+      "projectUniqueName": "C:\\Users\\felip\\Documents\\Github\\WebApiBrowserTravel\\ProyecoCrud.Models\\ProyecoCrud.Models.csproj",
       "projectName": "ProyecoCrud.Models",
-      "projectPath": "C:\\Users\\felip\\Documents\\Github\\CAR-TEST\\ProyecoCrud.Models\\ProyecoCrud.Models.csproj",
+      "projectPath": "C:\\Users\\felip\\Documents\\Github\\WebApiBrowserTravel\\ProyecoCrud.Models\\ProyecoCrud.Models.csproj",
       "packagesPath": "C:\\Users\\felip\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\felip\\Documents\\Github\\CAR-TEST\\ProyecoCrud.Models\\obj\\",
+      "outputPath": "C:\\Users\\felip\\Documents\\Github\\WebApiBrowserTravel\\ProyecoCrud.Models\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\felip\\AppData\\Roaming\\NuGet\\NuGet.Config",
