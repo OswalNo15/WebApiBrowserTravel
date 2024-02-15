@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProyecoCrud.Models")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+add3ec19a3febdf52a7267650c53d9c58b713635")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b378906a856abfba3ca70ba18dabfb105b63dfa6")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProyecoCrud.Models")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProyecoCrud.Models")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
