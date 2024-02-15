@@ -2421,19 +2421,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\felip\\.nuget\\packages\\": {}
+    "C:\\Users\\kuxan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\felip\\Documents\\Github\\CAR-TEST\\CarRent\\CarRent.csproj",
+      "projectUniqueName": "C:\\PERSONAL\\GITHUB\\WebApiBrowserTravel\\CarRent\\CarRent.csproj",
       "projectName": "CarRent",
-      "projectPath": "C:\\Users\\felip\\Documents\\Github\\CAR-TEST\\CarRent\\CarRent.csproj",
-      "packagesPath": "C:\\Users\\felip\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\felip\\Documents\\Github\\CAR-TEST\\CarRent\\obj\\",
+      "projectPath": "C:\\PERSONAL\\GITHUB\\WebApiBrowserTravel\\CarRent\\CarRent.csproj",
+      "packagesPath": "C:\\Users\\kuxan\\.nuget\\packages\\",
+      "outputPath": "C:\\PERSONAL\\GITHUB\\WebApiBrowserTravel\\CarRent\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\felip\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\kuxan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2453,6 +2453,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -2499,7 +2504,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
