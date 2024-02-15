@@ -13,11 +13,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\PERSONAL\\GITHUB\\WebApiBrowserTravel\\ProyectoCrud.BLL\\ProyectoCrud.BLL.csproj",
       "projectName": "ProyectoCrud.BLL",
       "projectPath": "C:\\PERSONAL\\GITHUB\\WebApiBrowserTravel\\ProyectoCrud.BLL\\ProyectoCrud.BLL.csproj",
       "packagesPath": "C:\\Users\\kuxan\\.nuget\\packages\\",
       "outputPath": "C:\\PERSONAL\\GITHUB\\WebApiBrowserTravel\\ProyectoCrud.BLL\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\felip\\Documents\\Github\\WebApiBrowserTravel\\ProyectoCrud.BLL\\ProyectoCrud.BLL.csproj",
+      "projectName": "ProyectoCrud.BLL",
+      "projectPath": "C:\\Users\\felip\\Documents\\Github\\WebApiBrowserTravel\\ProyectoCrud.BLL\\ProyectoCrud.BLL.csproj",
+      "packagesPath": "C:\\Users\\felip\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\felip\\Documents\\Github\\WebApiBrowserTravel\\ProyectoCrud.BLL\\obj\\",
+>>>>>>> 8cda1a1e2a0ff40e21a7372231a11d3c8f0ba5d0
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kuxan\\AppData\\Roaming\\NuGet\\NuGet.Config",

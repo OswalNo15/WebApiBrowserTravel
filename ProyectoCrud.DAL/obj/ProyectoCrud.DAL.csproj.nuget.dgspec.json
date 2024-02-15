@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\PERSONAL\\GITHUB\\WebApiBrowserTravel\\ProyectoCrud.DAL\\ProyectoCrud.DAL.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "C:\\PERSONAL\\GITHUB\\WebApiBrowserTravel\\ProyectoCrud.DAL\\ProyectoCrud.DAL.csproj",
         "packagesPath": "C:\\Users\\kuxan\\.nuget\\packages\\",
         "outputPath": "C:\\PERSONAL\\GITHUB\\WebApiBrowserTravel\\ProyectoCrud.DAL\\obj\\",
+=======
+    "C:\\Users\\felip\\Documents\\Github\\WebApiBrowserTravel\\ProyectoCrud.DAL\\ProyectoCrud.DAL.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\felip\\Documents\\Github\\WebApiBrowserTravel\\ProyectoCrud.DAL\\ProyectoCrud.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\felip\\Documents\\Github\\WebApiBrowserTravel\\ProyectoCrud.DAL\\ProyectoCrud.DAL.csproj",
+        "projectName": "ProyectoCrud.DAL",
+        "projectPath": "C:\\Users\\felip\\Documents\\Github\\WebApiBrowserTravel\\ProyectoCrud.DAL\\ProyectoCrud.DAL.csproj",
+        "packagesPath": "C:\\Users\\felip\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\felip\\Documents\\Github\\WebApiBrowserTravel\\ProyectoCrud.DAL\\obj\\",
+>>>>>>> 8cda1a1e2a0ff40e21a7372231a11d3c8f0ba5d0
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kuxan\\AppData\\Roaming\\NuGet\\NuGet.Config",

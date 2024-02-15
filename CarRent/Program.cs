@@ -22,7 +22,6 @@ var summaries = new[]
 };
 
 
-app.MapControllers();
 
 app.MapGet("/weatherforecast", () =>
 {
