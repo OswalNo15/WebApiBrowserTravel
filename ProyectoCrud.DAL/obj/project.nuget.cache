@@ -1,5 +1,6 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "GtSEqvuxY5/3M1s9tkMBn4HplgBMS50lCFkXEB7HChbkMS4BKgysNUhQXTXrgqw1OrkJ/jILLL+yKZCjCY7vUQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\felip\\Documents\\Github\\WebApiBrowserTravel\\ProyectoCrud.DAL\\ProyectoCrud.DAL.csproj",
@@ -80,5 +81,17 @@
     "C:\\Users\\felip\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\felip\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
   ],
+=======
+<<<<<<< HEAD
+  "dgSpecHash": "ILC3ZoUD61lsD98FDYJ+PgY2MRCic9z7Mpj48I3d03SQ6CzSwayM+sbdhaqImApRYB+UMuGN0mAkP3ZMAI0ylQ==",
+  "success": true,
+  "projectFilePath": "C:\\PERSONAL\\GITHUB\\WebApiBrowserTravel\\ProyectoCrud.DAL\\ProyectoCrud.DAL.csproj",
+=======
+  "dgSpecHash": "9QK7U/JhvCY9pFZrDMP8UakBcTT0YXoW/inMs9F3Xwm3HewJcuirqdspRZ17xMTZ9rsDTdOJEfMDLVcwKAzrEA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\felip\\Documents\\Github\\WebApiBrowserTravel\\ProyectoCrud.DAL\\ProyectoCrud.DAL.csproj",
+>>>>>>> 8cda1a1e2a0ff40e21a7372231a11d3c8f0ba5d0
+  "expectedPackageFiles": [],
+>>>>>>> 8a2aebd2e7c0f25dde11a95f01e4f74b2ddd3771
   "logs": []
 }
