@@ -12,7 +12,7 @@ namespace ProyectoCrud.DAL.Repositories
     {
         private readonly BdMilesCarRentalContext _context;
         //constructor
-        public UserRepository(BdMilesCarRentalContext context)
+        public PreferenceRepository(BdMilesCarRentalContext context)
         {
             _context = context;
         }
