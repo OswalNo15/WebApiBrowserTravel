@@ -5,11 +5,11 @@ VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarRent", "CarRent.csproj", "{27CC9D8F-84D1-4441-AFE6-8944B436C5BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyecoCrud.Models", "..\ProyecoCrud.Models\ProyecoCrud.Models.csproj", "{A4392DAD-794A-4260-88EF-76F4381239E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProyectoCrud.Models", "..\ProyecoCrud.Models\ProyectoCrud.Models.csproj", "{A4392DAD-794A-4260-88EF-76F4381239E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyectoCrud.DAL", "..\ProyectoCrud.DAL\ProyectoCrud.DAL.csproj", "{84C6A903-3816-479F-A8D9-6AE3A4D59D89}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProyectoCrud.DAL", "..\ProyectoCrud.DAL\ProyectoCrud.DAL.csproj", "{84C6A903-3816-479F-A8D9-6AE3A4D59D89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyectoCrud.BLL", "..\ProyectoCrud.BLL\ProyectoCrud.BLL.csproj", "{87CDC2CE-08DB-4BAD-B77E-D0BB6EB86033}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProyectoCrud.BLL", "..\ProyectoCrud.BLL\ProyectoCrud.BLL.csproj", "{87CDC2CE-08DB-4BAD-B77E-D0BB6EB86033}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
