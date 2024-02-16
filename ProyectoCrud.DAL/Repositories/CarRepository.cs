@@ -26,22 +26,27 @@ namespace ProyectoCrud.DAL.Repositories
 
         public async Task<Car> Get(int id)
         {
-            throw new NotImplementedException();
+            return await _context.Cars.FindAsync(id).ConfigureAwait(false);
         }
 
         public async Task<IQueryable<Car>> GetAll()
         {
-            throw new NotImplementedException();
+            IQueryable<Car> queryContratoSQL = _context.Cars;
+            return queryContratoSQL;
         }
 
         public async Task<bool> Insert(Car model)
         {
-            throw new NotImplementedException();
+            _context.Add(model);
+            await _context.SaveChangesAsync();
+            return true;
         }
 
         public async Task<bool> Update(Car model)
         {
-            throw new NotImplementedException();
+            _context.Cars.Update(model);
+            await _context.SaveChangesAsync();
+            return true;
         }
     }
 }
