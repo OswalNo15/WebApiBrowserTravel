@@ -1,14 +1,15 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "ILC3ZoUD61lsD98FDYJ+PgY2MRCic9z7Mpj48I3d03SQ6CzSwayM+sbdhaqImApRYB+UMuGN0mAkP3ZMAI0ylQ==",
   "success": true,
   "projectFilePath": "C:\\PERSONAL\\GITHUB\\WebApiBrowserTravel\\ProyectoCrud.DAL\\ProyectoCrud.DAL.csproj",
-=======
-  "dgSpecHash": "9QK7U/JhvCY9pFZrDMP8UakBcTT0YXoW/inMs9F3Xwm3HewJcuirqdspRZ17xMTZ9rsDTdOJEfMDLVcwKAzrEA==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\felip\\Documents\\Github\\WebApiBrowserTravel\\ProyectoCrud.DAL\\ProyectoCrud.DAL.csproj",
->>>>>>> 8cda1a1e2a0ff40e21a7372231a11d3c8f0ba5d0
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché C:\\PERSONAL\\GITHUB\\WebApiBrowserTravel\\ProyectoCrud.DAL\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

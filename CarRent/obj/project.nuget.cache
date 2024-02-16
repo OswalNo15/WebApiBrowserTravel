@@ -1,14 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "+bD+yR7Y08jkgvjZzg4octswwrhgoLurMxG/QiUJ3jOJ95QDq7ahZS5nqFLBLNT4T5VRUpThKWxMQVNb/bcaPA==",
   "success": true,
   "projectFilePath": "C:\\PERSONAL\\GITHUB\\WebApiBrowserTravel\\CarRent\\CarRent.csproj",
-=======
-  "dgSpecHash": "Tbfkvu6I65iJVpFOuU3R0LIb9xugrPBKVdHLMTdnPJMHzXKSgn7cLjP82tkQWCAIAksMvaXBdYhBxvQuVBFJhA==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\felip\\Documents\\Github\\WebApiBrowserTravel\\CarRent\\CarRent.csproj",
->>>>>>> 8cda1a1e2a0ff40e21a7372231a11d3c8f0ba5d0
   "expectedPackageFiles": [
     "C:\\Users\\kuxan\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\kuxan\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.0\\microsoft.aspnetcore.openapi.8.0.0.nupkg.sha512",
@@ -60,5 +54,12 @@
     "C:\\Users\\kuxan\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512",
     "C:\\Users\\kuxan\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché C:\\PERSONAL\\GITHUB\\WebApiBrowserTravel\\CarRent\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

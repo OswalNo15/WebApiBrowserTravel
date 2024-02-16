@@ -1,14 +1,15 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "q9M1sIAvzwIdS6azv9WNUDYSbKMH+p9YqhNaehei//JSPDa7Z9rcabgviHCQNTPAG/y0xwKnfDx96XA6Jgi9nQ==",
   "success": true,
   "projectFilePath": "C:\\PERSONAL\\GITHUB\\WebApiBrowserTravel\\ProyecoCrud.Models\\ProyecoCrud.Models.csproj",
-=======
-  "dgSpecHash": "uwkwxhjCWkdb9qGkMtp3/K9Lk+UZihqlmm+hglfs0Zl98OUgWG96Av3PSa2gnIGgGV73m7n/BxHA3gFuI29xxw==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\felip\\Documents\\Github\\WebApiBrowserTravel\\ProyecoCrud.Models\\ProyecoCrud.Models.csproj",
->>>>>>> 8cda1a1e2a0ff40e21a7372231a11d3c8f0ba5d0
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché C:\\PERSONAL\\GITHUB\\WebApiBrowserTravel\\ProyecoCrud.Models\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
