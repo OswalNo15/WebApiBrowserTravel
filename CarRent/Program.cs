@@ -14,11 +14,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<BdMilesCarRentalContext>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("CadenaSqlBrowerLocal")));
 #endregion
 
-
-
 var app = builder.Build();
-
-
 
 
 // Configure the HTTP request pipeline.
