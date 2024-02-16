@@ -245,7 +245,7 @@ public partial class BdMilesCarRentalContext : DbContext
                 .IsUnicode(false)
                 .HasColumnName("NAME");
             entity.Property(e => e.Passwordhash)
-                .HasMaxLength(50)
+                .HasMaxLength(500)
                 .HasColumnName("PASSWORDHASH");
             entity.Property(e => e.Phone)
                 .HasMaxLength(11)
