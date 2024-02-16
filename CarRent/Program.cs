@@ -35,6 +35,7 @@ builder.Services.AddAuthentication(config =>
 {
     config.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
     config.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+
 }).AddJwtBearer(config =>
 {
     config.RequireHttpsMetadata = false;
@@ -62,9 +63,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-app.UseAuthentication();
+
 app.UseHttpsRedirection();
 app.MapControllers();
-
+app.UseAuthentication();
 app.Run();
 
