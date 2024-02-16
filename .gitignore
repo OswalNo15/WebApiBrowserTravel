@@ -51,3 +51,8 @@ CarRent/.vs/CarRent/v17/.suo
 *.props
 *.cache
 *.dll
+CarRent/.vs
+CarRent/obj
+ProyectoCrud.DAL/obj
+ProyectoCrud.BLL/obj
+ProyecoCrud.Models/obj
