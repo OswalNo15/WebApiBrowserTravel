@@ -41,3 +41,13 @@ bld/
 msbuild.log
 msbuild.err
 msbuild.wrn
+*.cache
+*.exe
+*.dll
+ProyectoCrud.DAL/obj/ProyectoCrud.DAL.csproj.nuget.dgspec.json
+ProyectoCrud.DAL/obj/project.nuget.cache
+CarRent/.vs/CarRent/v17/.suo
+*.dll
+*.props
+*.cache
+*.dll
