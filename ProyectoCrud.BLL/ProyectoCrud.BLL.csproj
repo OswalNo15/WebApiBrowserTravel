@@ -16,4 +16,9 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ProyecoCrud.Models\ProyectoCrud.Models.csproj" />
+    <ProjectReference Include="..\ProyectoCrud.DAL\ProyectoCrud.DAL.csproj" />
+  </ItemGroup>
+
 </Project>
