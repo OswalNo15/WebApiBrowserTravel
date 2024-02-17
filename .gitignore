@@ -56,3 +56,6 @@ CarRent/obj
 ProyectoCrud.DAL/obj
 ProyectoCrud.BLL/obj
 ProyecoCrud.Models/obj
+CarRent/bin/Debug/net8.0/CarRent.dll
+CarRent/bin/Debug/net8.0/CarRent.exe
+CarRent/bin/Debug/net8.0/CarRent.pdb
