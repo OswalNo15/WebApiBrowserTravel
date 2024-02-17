@@ -19,7 +19,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ProyectoCrud.DAL\ProyectoCrud.DAL.csproj" />
+    <ProjectReference Include="..\ProyecoCrud.Models\ProyectoCrud.Models.csproj" />
+    <ProjectReference Include="..\ProyectoCrud.BLL\ProyectoCrud.BLL.csproj" />
   </ItemGroup>
 
 </Project>

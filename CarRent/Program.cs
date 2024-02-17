@@ -5,7 +5,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using ProyectoCrud.DAL;
 using ProyectoCrud.DAL.BD_Context;
+using ProyectoCrud.DAL.Repositories;
 using ProyectoCrud.DAL.Services;
+using ProyectoCrud.Models;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -25,6 +27,14 @@ builder.Services.AddDbContext<BdMilesCarRentalContext>(opt => opt.UseSqlServer(b
 
 #region Inyeccion de dependencias
 builder.Services.AddScoped<IAuthorizationService, AuthorizationService>();
+builder.Services.AddScoped<IGenericRepository<Car>, CarRepository>();
+builder.Services.AddScoped<IGenericRepository<Client>, ClientRepository>();
+builder.Services.AddScoped<IGenericRepository<IdType>, IdTypeRepository>();
+builder.Services.AddScoped<IGenericRepository<PreferenceClient>, PreferenceClientRepository>();
+builder.Services.AddScoped<IGenericRepository<Preference>, PreferenceRepository>();
+builder.Services.AddScoped<IGenericRepository<Reservation>, ReservationRepository>();
+builder.Services.AddScoped<IGenericRepository<Role>, RoleRepository>();
+builder.Services.AddScoped<IGenericRepository<User>, UserRepository>();
 #endregion
 
 #region configuration of JTW

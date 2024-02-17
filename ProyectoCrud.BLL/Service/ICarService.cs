@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ProyectoCrud.BLL.Service
 {
-    internal interface ICarService
+    public interface ICarService
     {
         Task<bool> Insert(Car model);
         Task<bool> Update(Car model);
