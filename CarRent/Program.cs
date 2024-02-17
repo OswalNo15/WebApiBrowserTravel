@@ -1,10 +1,7 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using ProyectoCrud.BLL.Service;
-using ProyectoCrud.DAL;
 using ProyectoCrud.DAL.BD_Context;
 using ProyectoCrud.DAL.Repositories;
 using ProyectoCrud.DAL.Services;
@@ -38,6 +35,13 @@ builder.Services.AddScoped<IGenericRepository<Role>, RoleRepository>();
 builder.Services.AddScoped<IGenericRepository<User>, UserRepository>();
 
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<ICarService, CarService>();
+//builder.Services.AddScoped<IClientService, ClientService>();
+//builder.Services.AddScoped<IIdTypeService, IdTypeService>();
+builder.Services.AddScoped<IPreferenceClientService, PreferenceClientService>();
+builder.Services.AddScoped<IPreferenceService, PreferenceService>();
+//builder.Services.AddScoped<IReservationService, ReservationService>();
+//builder.Services.AddScoped<IRoleService, RoleService>();
 #endregion
 
 #region configuration of JTW

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace ProyectoCrud.BLL.Service
 {
-    internal class CarService : ICarService
+    public class CarService : ICarService
     {
         private readonly IGenericRepository<Car> _carRepo;
         public CarService(IGenericRepository<Car> carRepo)

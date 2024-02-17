@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace ProyectoCrud.BLL.Service
 {
-    internal class Preferenceservice : IPreferenceService
+    public class PreferenceService : IPreferenceService
     {
         private readonly IGenericRepository<Preference> _PreferenceRepo;
-        public Preferenceservice(IGenericRepository<Preference> PreferenceRepo)
+        public PreferenceService(IGenericRepository<Preference> PreferenceRepo)
         {
             _PreferenceRepo = PreferenceRepo;
         }

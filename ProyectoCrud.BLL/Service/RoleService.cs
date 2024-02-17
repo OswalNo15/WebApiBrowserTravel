@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ProyectoCrud.BLL.Service
 {
-    internal class RoleService : IRoleService
+    public class RoleService : IRoleService
     {
         private readonly IRoleService _roleService;
 
