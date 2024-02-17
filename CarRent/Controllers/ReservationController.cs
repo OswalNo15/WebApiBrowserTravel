@@ -18,14 +18,11 @@ namespace CarRent.Controllers
         private readonly IReservationService _ReservationService;
 
 
-        public ReservationController(IReservationService ReservationService)
+        public ReservationController(IReservationService ReservationService, IAuthorizationService authorizationService)
         {
             this._ReservationService = ReservationService;
-        }
-
-        public ReservationController(IAuthorizationService authorizationService)
-        {
             _authorizationService = authorizationService;
+
         }
 
         // GET: api/<ReservationController>

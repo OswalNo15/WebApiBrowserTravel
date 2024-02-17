@@ -20,14 +20,11 @@ namespace CarRent.Controllers
         private readonly ICarService _carService;
 
 
-        public CarController(ICarService userService)
+        public CarController(ICarService userService, IAuthorizationService authorizationService)
         {
             this._carService = userService;
-        }
-
-        public CarController(IAuthorizationService authorizationService)
-        {
             _authorizationService = authorizationService;
+
         }
 
 

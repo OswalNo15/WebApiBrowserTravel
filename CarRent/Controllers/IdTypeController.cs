@@ -16,14 +16,11 @@ namespace CarRent.Controllers
         private readonly IIdTypeService _IdTypeService;
 
 
-        public IdTypeController(IIdTypeService IdTypeService)
+        public IdTypeController(IIdTypeService IdTypeService, IAuthorizationService authorizationService)
         {
             this._IdTypeService = IdTypeService;
-        }
-
-        public IdTypeController(IAuthorizationService authorizationService)
-        {
             _authorizationService = authorizationService;
+
         }
 
         // GET: api/<IdTypeController>

@@ -15,15 +15,13 @@ namespace CarRent.Controllers
         private readonly IClientService _PreferenceClientServiceService;
 
 
-        public PreferenceClientController(IClientService PreferenceClientService)
+        public PreferenceClientController(IClientService PreferenceClientService, IAuthorizationService authorizationService)
         {
             this._PreferenceClientServiceService = PreferenceClientService;
+            _authorizationService = authorizationService;
+
         }
 
-        public PreferenceClientController(IAuthorizationService authorizationService)
-        {
-            _authorizationService = authorizationService;
-        }
 
         // GET: api/<PreferenceClientController>
         [HttpGet]

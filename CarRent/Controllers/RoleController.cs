@@ -17,14 +17,11 @@ namespace CarRent.Controllers
         private readonly IRoleService _RoleService;
 
 
-        public RoleController(IRoleService RoleService)
+        public RoleController(IRoleService RoleService, IAuthorizationService authorizationService)
         {
             this._RoleService = RoleService;
-        }
-
-        public RoleController(IAuthorizationService authorizationService)
-        {
             _authorizationService = authorizationService;
+
         }
 
 

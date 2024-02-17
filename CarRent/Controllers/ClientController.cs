@@ -16,15 +16,13 @@ namespace CarRent.Controllers
         private readonly IClientService _ClientService;
 
 
-        public ClientController(IClientService ClientService)
+        public ClientController(IClientService ClientService, IAuthorizationService authorizationService)
         {
             this._ClientService = ClientService;
+            _authorizationService = authorizationService;
+
         }
 
-        public ClientController(IAuthorizationService authorizationService)
-        {
-            _authorizationService = authorizationService;
-        }
 
         // GET: api/<ClientController>
         [HttpGet]
