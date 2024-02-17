@@ -12,7 +12,8 @@
           "Microsoft.EntityFrameworkCore": "8.0.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.2",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.2",
-          "ProyectoCrud.DAL": "1.0.0",
+          "ProyectoCrud.BLL": "1.0.0",
+          "ProyectoCrud.Models": "1.0.0",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
         "runtime": {
@@ -897,6 +898,18 @@
           }
         }
       },
+      "ProyectoCrud.BLL/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.2",
+          "Microsoft.EntityFrameworkCore": "8.0.2",
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.2",
+          "ProyectoCrud.DAL": "1.0.0",
+          "ProyectoCrud.Models": "1.0.0"
+        },
+        "runtime": {
+          "ProyectoCrud.BLL.dll": {}
+        }
+      },
       "ProyectoCrud.DAL/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.2",
@@ -1470,6 +1483,11 @@
       "sha512": "sha512-IXoJOXIqc39AIe+CIR7koBtRGMiCt/LPM3lI+PELtDIy9XdyeSrwXFdWV9dzJ2Awl0paLWUaknLxFQ5HpHZUog==",
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
+    },
+    "ProyectoCrud.BLL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "ProyectoCrud.DAL/1.0.0": {
       "type": "project",

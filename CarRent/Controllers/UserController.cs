@@ -3,6 +3,10 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ProyectoCrud.Models.Custom;
 using ProyectoCrud.DAL.Services;
+using ProyectoCrud.BLL.Service;
+using ProyectoCrud.DAL.Repositories;
+using System.Diagnostics.Contracts;
+using ProyectoCrud.Models;
 namespace CarRent.Controllers
 {
     [Route("api/[controller]")]
@@ -11,25 +15,36 @@ namespace CarRent.Controllers
     {
         private readonly ProyectoCrud.DAL.Services.IAuthorizationService _authorizationService;
 
+        private readonly IUserService _userService;
+
         public UserController(ProyectoCrud.DAL.Services.IAuthorizationService authorizationService)
         {
             _authorizationService = authorizationService;
         }
 
+        public UserController(IUserService userService)
+        {
+            this._userService = userService;
+        }
+
+        [Authorize]
         [HttpGet]
         [Route("ListUser")]
         public async Task<IActionResult> GetList() {
-            var ListaUsuario = await Task.FromResult(new List<string> {
 
-        "Carlos",
-        "Lo mama",
-        "Kuxan",
-        "Sinomino",
-        "Explotacion laboral"
-        });
+            try
+            {
 
+                IQueryable<User> queryContactoSQL = await _userService.GetAll();
 
-            return Ok(ListaUsuario);
+                return Ok(queryContactoSQL);
+            }
+            catch (Exception)
+            {
+                
+                throw;
+            }
+
         }
 
         [HttpPost]
@@ -37,12 +52,9 @@ namespace CarRent.Controllers
         public async Task<IActionResult> PostAutenticarUser([FromBody] AuthorizationRequest authenticate) {
             var resultAuthenticate = await _authorizationService.ReturnToken(authenticate);
 
-            if (resultAuthenticate == null)
-                return Unauthorized();
-
+            if (resultAuthenticate == null) { return Unauthorized(); }
+                
             return Ok(resultAuthenticate);
-
-
         }
 
         
