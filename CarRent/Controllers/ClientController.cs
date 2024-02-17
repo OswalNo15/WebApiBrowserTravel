@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ProyectoCrud.BLL.Service;
+using ProyectoCrud.Models;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -29,38 +30,45 @@ namespace CarRent.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            return Ok();
+            IQueryable<Client> clients = await _ClientService.GetAll();
+
+            return Ok(clients);
         }
 
         // GET api/<ClientController>/5
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)
         {
-            return Ok();
+            Client client = await _ClientService.Get(id);
+
+            return Ok(client);
         }
 
         // POST api/<ClientController>
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody] string value)
+        public async Task<IActionResult> Post([FromBody] Client client)
         {
-            return Ok();
+            bool insert = await _ClientService.Insert(client);
 
+            return Ok(new { create = insert, client });
         }
 
         // PUT api/<ClientController>/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> Put(int id, [FromBody] string value)
+        public async Task<IActionResult> Put([FromBody] Client client)
         {
-            return Ok();
+            bool insert = await _ClientService.Update(client);
 
+            return Ok(new { create = insert, client });
         }
 
         // DELETE api/<ClientController>/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            return Ok();
+            bool deleted = await _ClientService.Delete(id);
 
+            return Ok(deleted);
         }
     }
 }

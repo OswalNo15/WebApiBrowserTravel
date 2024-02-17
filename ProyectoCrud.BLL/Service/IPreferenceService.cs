@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ProyectoCrud.BLL.Service
 {
-    internal interface IPreference
+    public interface IPreferenceService
     {
         Task<bool> Insert(Preference model);
         Task<bool> Update(Preference model);

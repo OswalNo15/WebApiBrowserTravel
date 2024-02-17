@@ -1,7 +1,10 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using ProyectoCrud.BLL.Service;
+using ProyectoCrud.Models;
 using ProyectoCrud.Models.Custom;
+using System.Data;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -32,43 +35,45 @@ namespace CarRent.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            return Ok();    
+            IQueryable<Car> cars = await _carService.GetAll();
+
+            return Ok(cars);
         }
 
         // GET api/<CarController>/5
         [HttpGet("{id}")]
-        public async Task<IActionResult> Get(int id)
+        public async Task<IActionResult> Get(int year)
         {
-            return Ok();
+            IQueryable<Car> car = await _carService.GetForModel(year);
+
+            return Ok(car);
         }
 
         // POST api/<CarController>
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody] AuthorizationRequest authenticate)
+        public async Task<IActionResult> Post([FromBody] AuthorizationRequest authenticate, Car car)
         {
-            //var resultAuthenticate = await _authorizationService.ReturnToken(authenticate);
+            bool insert = await _carService.Insert(car);
 
-            //if (resultAuthenticate == null) { return Unauthorized(); }
-
-
-            //return Ok(resultAuthenticate);
-            return Ok();
+            return Ok(new { create = insert, car});
         }
 
         // PUT api/<CarController>/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> Put(int id, [FromBody] AuthorizationRequest authenticate)
+        public async Task<IActionResult> Put([FromBody] AuthorizationRequest authenticate, Car car)
         {
-            return Ok();
+            bool insert = await _carService.Update(car);
 
+            return Ok(new { create = insert, car });
         }
 
         // DELETE api/<CarController>/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            return Ok();
+            bool deleted = await _carService.Delete(id);
 
+            return Ok(deleted);
         }
     }
 }

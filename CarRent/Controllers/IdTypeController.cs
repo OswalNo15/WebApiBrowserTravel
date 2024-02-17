@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ProyectoCrud.BLL.Service;
+using ProyectoCrud.Models;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -12,10 +13,10 @@ namespace CarRent.Controllers
     {
         private readonly IAuthorizationService _authorizationService;
 
-        private readonly IClientService _IdTypeService;
+        private readonly IIdTypeService _IdTypeService;
 
 
-        public IdTypeController(IClientService IdTypeService)
+        public IdTypeController(IIdTypeService IdTypeService)
         {
             this._IdTypeService = IdTypeService;
         }
@@ -29,37 +30,45 @@ namespace CarRent.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            return Ok();
+            IQueryable<IdType> IdTypes = await _IdTypeService.GetAll();
+
+            return Ok(IdTypes);
         }
 
         // GET api/<IdTypeController>/5
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)
         {
-            return Ok();
+            IdType IdType = await _IdTypeService.Get(id);
+
+            return Ok(IdType);
         }
 
         // POST api/<IdTypeController>
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody] string value)
+        public async Task<IActionResult> Post([FromBody] IdType IdType)
         {
-            return Ok();
+            bool insert = await _IdTypeService.Insert(IdType);
+
+            return Ok(new { create = insert, IdType });
         }
 
         // PUT api/<IdTypeController>/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> Put(int id, [FromBody] string value)
+        public async Task<IActionResult> Put([FromBody] IdType IdType)
         {
-            return Ok();
+            bool insert = await _IdTypeService.Update(IdType);
 
+            return Ok(new { create = insert, IdType });
         }
 
         // DELETE api/<IdTypeController>/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            return Ok();
+            bool deleted = await _IdTypeService.Delete(id);
 
+            return Ok(deleted);
         }
     }
 }

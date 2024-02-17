@@ -18,7 +18,7 @@ namespace CarRent.Controllers
         private readonly IPreferenceService _PreferenceService;
 
 
-        public PreferenceController(IReferenceService PreferenceService)
+        public PreferenceController(IPreferenceService PreferenceService)
         {
             this._PreferenceService = PreferenceService;
         }
