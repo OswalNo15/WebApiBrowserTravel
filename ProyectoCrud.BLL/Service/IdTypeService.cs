@@ -1,4 +1,5 @@
-﻿using ProyectoCrud.Models;
+﻿using ProyectoCrud.DAL.Repositories;
+using ProyectoCrud.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,9 +10,9 @@ namespace ProyectoCrud.BLL.Service
 {
     public class IdTypeService : IIdTypeService
     {
-        private readonly IIdTypeService _IdTypeService;
+        private readonly IGenericRepository<IdType> _IdTypeService;
 
-        public IdTypeService(IIdTypeService IdTypeService)
+        public IdTypeService(IGenericRepository<IdType> IdTypeService)
         {
             _IdTypeService = IdTypeService;
         }
