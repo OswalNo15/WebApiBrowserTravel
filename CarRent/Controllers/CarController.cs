@@ -51,7 +51,7 @@ namespace CarRent.Controllers
 
         // POST api/<CarController>
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody] AuthorizationRequest authenticate, Car car)
+        public async Task<IActionResult> Post([FromBody] Car car)
         {
             bool insert = await _carService.Insert(car);
 
@@ -60,7 +60,7 @@ namespace CarRent.Controllers
 
         // PUT api/<CarController>/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> Put([FromBody] AuthorizationRequest authenticate, Car car)
+        public async Task<IActionResult> Put([FromBody] Car car)
         {
             bool insert = await _carService.Update(car);
 
