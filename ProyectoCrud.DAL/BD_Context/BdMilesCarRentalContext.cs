@@ -58,6 +58,15 @@ public partial class BdMilesCarRentalContext : DbContext
                 .HasMaxLength(50)
                 .IsUnicode(false)
                 .HasColumnName("TUITION");
+            entity.Property(e => e.Locality_collected)
+                .HasMaxLength(250)
+                .IsUnicode(false)
+                .HasColumnName("LOCALITY_COLLECTED");
+            entity.Property(e => e.Return_location)
+                .HasMaxLength(250)
+                .IsUnicode(false)
+                .HasColumnName("RETURN_LOCATION");
+            entity.Property(e => e.Available);
         });
 
         modelBuilder.Entity<Client>(entity =>
