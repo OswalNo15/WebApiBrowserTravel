@@ -36,12 +36,12 @@ builder.Services.AddScoped<IGenericRepository<User>, UserRepository>();
 
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<ICarService, CarService>();
-//builder.Services.AddScoped<IClientService, ClientService>();
-//builder.Services.AddScoped<IIdTypeService, IdTypeService>();
+builder.Services.AddScoped<IClientService, ClientService>();
+builder.Services.AddScoped<IIdTypeService, IdTypeService>();
 builder.Services.AddScoped<IPreferenceClientService, PreferenceClientService>();
 builder.Services.AddScoped<IPreferenceService, PreferenceService>();
-//builder.Services.AddScoped<IReservationService, ReservationService>();
-//builder.Services.AddScoped<IRoleService, RoleService>();
+builder.Services.AddScoped<IReservationService, ReservationService>();
+builder.Services.AddScoped<IRoleService, RoleService>();
 #endregion
 
 #region configuration of JTW
