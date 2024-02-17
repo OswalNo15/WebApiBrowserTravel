@@ -1,4 +1,5 @@
-﻿using ProyectoCrud.Models;
+﻿using ProyectoCrud.DAL.Repositories;
+using ProyectoCrud.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,9 +10,9 @@ namespace ProyectoCrud.BLL.Service
 {
     public class ClientService : IClientService
     {
-        private readonly IClientService _clientService;
+        private readonly IGenericRepository<Client> _clientService;
        
-        public ClientService(IClientService clientService)
+        public ClientService(IGenericRepository<Client> clientService)
         {
             _clientService = clientService;
         }
