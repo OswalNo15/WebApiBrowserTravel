@@ -16,5 +16,7 @@ namespace ProyectoCrud.BLL.Service
         Task<IQueryable<Car>> GetAll();
         Task<IQueryable<Car>> GetForColor(string color);
         Task<IQueryable<Car>> GetForModel(int? year);
+        Task<IQueryable<Car>> GetForLocalityCollected(string LocalityCollected);
+        Task<IQueryable<Car>> GetForReturnLocation(string ReturnLocation);
     }
 }

@@ -75,5 +75,24 @@ namespace CarRent.Controllers
 
             return Ok(deleted);
         }
+
+        
+        [HttpGet]
+        [Route("ListCarForLocalityCollected")]
+        public async Task<IActionResult> GetForLocalityCollected(string LocalityCollected)
+        {
+            IQueryable<Car> car = await _carService.GetForLocalityCollected(LocalityCollected);
+
+            return Ok(car);
+        }
+        
+        [HttpGet]
+        [Route("ListForReturnLocation")]
+        public async Task<IActionResult> GetForReturnLocation(string ReturnLocation)
+        {
+            IQueryable<Car> car = await _carService.GetForLocalityCollected(ReturnLocation);
+
+            return Ok(car);
+        }
     }
 }

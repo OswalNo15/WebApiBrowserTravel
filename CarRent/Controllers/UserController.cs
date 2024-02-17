@@ -24,7 +24,6 @@ namespace CarRent.Controllers
         }
 
         [HttpGet]
-        [Authorize]
         [Route("ListUser")]
         public async Task<IActionResult> GetList() {
 

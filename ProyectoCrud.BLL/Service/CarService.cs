@@ -46,6 +46,21 @@ namespace ProyectoCrud.BLL.Service
             if (car == null) throw new ArgumentNullException("Car not found");
             return car;
         }
+        public async Task<IQueryable<Car>> GetForLocalityCollected(string LocalityCollected)
+        {
+            IQueryable<Car> queryCarSQL = await _carRepo.GetAll();
+            IQueryable<Car> car = queryCarSQL.Where(c => c.Locality_collected == LocalityCollected);
+            if (car == null) throw new ArgumentNullException("Car not found");
+            return car;
+        }
+        
+        public async Task<IQueryable<Car>> GetForReturnLocation(string ReturnLocation)
+        {
+            IQueryable<Car> queryCarSQL = await _carRepo.GetAll();
+            IQueryable<Car> car = queryCarSQL.Where(c => c.Return_location == ReturnLocation);
+            if (car == null) throw new ArgumentNullException("Car not found");
+            return car;
+        }
 
         public async Task<bool> Insert(Car model)
         {

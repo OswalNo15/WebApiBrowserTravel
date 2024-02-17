@@ -18,6 +18,9 @@ public partial class Car
     public long? Milleage { get; set; }
 
     public bool? Asset { get; set; }
+    public string? Locality_collected { get; set; }
+    public string? Return_location { get; set; }
+    public bool? Available { get; set; }
 
     public virtual ICollection<Reservation> OReservations { get; set; } = new List<Reservation>();
 }
