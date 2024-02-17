@@ -3,6 +3,7 @@ using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
+using ProyectoCrud.BLL.Service;
 using ProyectoCrud.DAL;
 using ProyectoCrud.DAL.BD_Context;
 using ProyectoCrud.DAL.Repositories;
@@ -35,6 +36,8 @@ builder.Services.AddScoped<IGenericRepository<Preference>, PreferenceRepository>
 builder.Services.AddScoped<IGenericRepository<Reservation>, ReservationRepository>();
 builder.Services.AddScoped<IGenericRepository<Role>, RoleRepository>();
 builder.Services.AddScoped<IGenericRepository<User>, UserRepository>();
+
+builder.Services.AddScoped<IUserService, UserService>();
 #endregion
 
 #region configuration of JTW

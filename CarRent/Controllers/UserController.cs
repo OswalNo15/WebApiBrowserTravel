@@ -17,18 +17,14 @@ namespace CarRent.Controllers
 
         private readonly IUserService _userService;
 
-        public UserController(ProyectoCrud.DAL.Services.IAuthorizationService authorizationService)
+        public UserController(ProyectoCrud.DAL.Services.IAuthorizationService authorizationService, IUserService userService)
         {
             _authorizationService = authorizationService;
-        }
-
-        public UserController(IUserService userService)
-        {
             this._userService = userService;
         }
 
-        [Authorize]
         [HttpGet]
+        [Authorize]
         [Route("ListUser")]
         public async Task<IActionResult> GetList() {
 
