@@ -1,4 +1,5 @@
-﻿using ProyectoCrud.Models;
+﻿using ProyectoCrud.DAL.Repositories;
+using ProyectoCrud.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,8 +10,8 @@ namespace ProyectoCrud.BLL.Service
 {
     public class ReservationService : IReservationService
     {
-        private readonly IReservationService _reservationService;
-        public ReservationService(IReservationService reservationService)
+        private readonly IGenericRepository<Reservation> _reservationService;
+        public ReservationService(IGenericRepository<Reservation> reservationService)
         {
             _reservationService = reservationService;
         }

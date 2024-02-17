@@ -1,4 +1,5 @@
-﻿using ProyectoCrud.Models;
+﻿using ProyectoCrud.DAL.Repositories;
+using ProyectoCrud.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,9 +10,9 @@ namespace ProyectoCrud.BLL.Service
 {
     public class RoleService : IRoleService
     {
-        private readonly IRoleService _roleService;
+        private readonly IGenericRepository<Role> _roleService;
 
-        public RoleService(IRoleService roleService)
+        public RoleService(IGenericRepository<Role> roleService)
         {
             _roleService = roleService;
         }
